@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelime App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body page="add">
+  
+  <div class="Header">
+    <div class="container">
+
+      <div class="Header-logo">
+        <a href="index.html">
+          <h3>Kelime App</h3>
+        </a>
+      </div>
+
+      <div class="Header-menu">
+        <label class="Header-menu-button" for="">Kelime Ekle</label>
+        <a href="words.html">
+          <label class="Header-menu-button" for="">Kelimeler</label>
+        </a>
+        <a href="workWord.html">
+          <label class="Header-menu-button" for="">Kelime Çalış</label>
+        </a>
+        <label class="Header-menu-button" for="" id="signout">Çıkış Yap</label>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="Content">
+    <div class="container">
+
+      <div class="Content-title">
+        <h3>Kelime Ekle</h3>
+      </div>
+
+      <div class="Content-addWord">
+        <ul>
+          <li>
+            <input type="text" id="mainWord" placeholder="Kelimenin Türkçesini Giriniz...">
+          </li>
+          <li>
+            <input type="text" id="meaningWord" placeholder="Kelimenin Yabancı Dil Karşılığını Giriniz...">
+          </li>
+          <li>
+            <button id="sendToFirebase">Kelimeyi Kaydet</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelime App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body page="index">
+  
+  <div class="Header">
+    <div class="container">
+
+      <div class="Header-logo">
+        <a href="#">
+          <h3>Kelime App</h3>
+        </a>
+      </div>
+
+      <div class="Header-menu">
+
+        <label class="Header-menu-button" for="signup">Kayıt Ol</label>
+        <input type="checkbox" id="signup">
+        <div class="Header-menu-popup">
+          <div class="Header-menu-popup-inner">
+            <div class="Header-menu-popup-inner-title">
+              <h5>Kayıt Ol</h5>
+              <label for="signup">
+                <i class="fa fa-times"></i>
+              </label>
+            </div>
+            <div class="Header-menu-popup-inner-content">
+              <ul>
+                <li>
+                  <input type="mail" id="signup-mail" placeholder="Mail Giriniz...">
+                </li>
+                <li>
+                  <input type="password" id="signup-password" placeholder="Şifre Giriniz...">
+                </li>
+                <li>
+                  <button type="submit" id="signup-button">Kayıt Ol</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <label class="Header-menu-button" for="signin">Giriş Yap</label>
+        <input type="checkbox" id="signin">
+        <div class="Header-menu-popup">
+          <div class="Header-menu-popup-inner">
+            <div class="Header-menu-popup-inner-title">
+              <h5>Giriş Yap</h5>
+              <label for="signin">
+                <i class="fa fa-times"></i>
+              </label>
+            </div>
+            <div class="Header-menu-popup-inner-content">
+              <ul>
+                <li>
+                  <input type="mail" id="signin-mail" placeholder="Mail Giriniz...">
+                </li>
+                <li>
+                  <input type="password" id="signin-password" placeholder="Şifre Giriniz...">
+                </li>
+                <li>
+                  <button type="submit" id="signin-button">Giriş Yap</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="Content">
+    <div class="container">
+
+      <div class="Content-title">
+        <h3>Kelime App Nedir?</h3>
+      </div>
+      <div class="Content-text">
+        <p>
+          KelimeApp ile yabancı dil öğrenirken kelime ezberlemeniz oldukça kolaylaşacaktır. Feinnmann yöntemi
+          ile doğru bildiğiniz kelimeyi daha seyrek göreceksiniz. Yanlış bildiğiniz kelimeyi ise daha sık
+          göreceksiniz. Bu sayede az zamanda çok kelime ezberleyebileceksiniz.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
