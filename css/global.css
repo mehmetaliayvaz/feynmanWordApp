@@ -117,6 +117,8 @@ div[prototype] {
       font-size: 20px;
       line-height: 28px;
       text-align: center; }
+    .Content-text a {
+      color: #ff6d00; }
 
 .Content-addWord {
   display: flex;

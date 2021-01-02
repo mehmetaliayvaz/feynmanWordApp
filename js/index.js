@@ -1,9 +1,17 @@
 (function() {
   
-  var firebaseConfig = { /** firebase config */ };
-  
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_0nCc2JHUFZHHmOlrzpnUWQsR4eDzgzQ",
+    authDomain: "kelime-app.firebaseapp.com",
+    projectId: "kelime-app",
+    storageBucket: "kelime-app.appspot.com",
+    messagingSenderId: "881531999347",
+    appId: "1:881531999347:web:54aac4d02a61c29466c606",
+    measurementId: "G-N1D87K8DB8"
+  };
+
   firebase.initializeApp(firebaseConfig);
-  
+  firebase.analytics();
   var current_user = "";
   var words = [];
   var current_word = {};
